@@ -8,11 +8,7 @@ const tax = (salary) => salary - (salary * 13 / 100);
 
 let salaryUser = Number(prompt('Введите вашу зароботную плату'));
 
-if (isNaN(salaryUser)) {
-   console.log('Значение задано не верно');
-} else {
-   console.log(`Размер заработной платы за вычетом налогов равен ${tax(salaryUser)}`);
-}
+console.log(isNaN(salaryUser)) ? 'Значение задано не верно' : `Размер заработной платы за вычетом налогов равен ${tax(salaryUser)}`;
 
 // Задание 3
 let number1 = Number(prompt('Введите число 1'));
